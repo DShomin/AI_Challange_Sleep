@@ -1,0 +1,47 @@
+# best score file
+
+## submit file
+```
+final_result.csv
+``` 
+
+## model file
+```
+b0_0/best_score_fold0_010.pth
+b0_1/best_score_fold0_010.pth
+b1/best_score_fold0_010.pth
+b2/best_score_fold0_010.pth
+b3/best_score_fold0_010.pth
+b4/best_score_fold0_010.pth
+```
+<hr>
+
+# 1. Running train code
+```
+python inference-train.py
+```
+위 명령어 실행시 아래와 같은 경로에 모델 파일 생성
+-  output file (model with log)
+    - tf_efficientnet_b0_ns_0.7/
+    - tf_efficientnet_b0_ns_0.8/
+    - tf_efficientnet_b1_ns_0.8/
+    - tf_efficientnet_b2_ns_0.8/
+    - tf_efficientnet_b3_ns_0.8/
+    - tf_efficientnet_b4_ns_0.8/
+    
+
+<hr>
+# 2. Running inference code
+
+```
+python inference-test.py
+```
+위 명령어 실행 시 아래와 같은 파일이 생성
+- output file
+    - final_result1.csv
+    - final_result2.csv
+    - final_result3.csv
+    - final_result4.csv
+    - final_result5.csv
+    - final_result6.csv
+    - final_result_ensemble.csv (최종)
