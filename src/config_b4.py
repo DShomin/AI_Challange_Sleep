@@ -11,7 +11,7 @@ args = {
     "input_size":512,
     "batch_size":32,
     "infer_batch_size":64,
-    "infer_model_path":'tf_efficientnet_b4_ns_0.8',
+    "infer_model_path":'b4',
     "infer_best_model_name":'best_score_fold0_010.pth',
     "infer_prefix":6, 
     "num_workers":1,
