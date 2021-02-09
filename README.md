@@ -32,6 +32,25 @@ python inference-train.py
 
 <hr>
 # 2. Running inference code
+```
+ - inference-train.py 코드 작성
+
+ python inference-train.py
+```
+```
+ - inference-test1.py 코드 작성
+
+ python inference-test1.py
+
+ output : 최고점을 받은 모델과 비슷한 성능을 보이는 모델 (inferece_result1.csv)
+
+```
+ ```
+ - inference-test2.py 코드 작성
+
+ output : 최고점을 받은 모델 (inferece_result2.csv)
+```
+
 
 ```
 python inference-test.py
