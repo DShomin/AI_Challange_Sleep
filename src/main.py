@@ -20,7 +20,7 @@ from models import *
 from trainer import *
 from transforms import *
 from optimizer import *
-from utils import seed_everything, find_th, LabelSmoothingLoss
+from utils import seed_everything, find_th, LabelSmoothingLoss, GradualWarmupSchedulerV2
 
 import warnings
 from warmup_scheduler import GradualWarmupScheduler
