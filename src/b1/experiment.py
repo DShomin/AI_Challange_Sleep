@@ -9,13 +9,12 @@ args = {
     "epochs":100, 
     "num_classes":5,
     "input_size":512,
-    "batch_size":32,
+    "batch_size":64,
     "infer_batch_size":64,
-    "infer_model_path":'b2',
+    "infer_model_path":'2021-02-06_19:46:45_tf_efficientnet_b0_ns',
     "infer_best_model_name":'best_score_fold0_010.pth',
-    "infer_prefix":4, 
     "num_workers":1,
-    "model":"tf_efficientnet_b2_ns", # resnext50_32x4d,tf_efficientnet_b2_ns, vit_base_patch16_384, vit_small_patch16_224 "vit_small_patch16_224"
+    "model":"tf_efficientnet_b1_ns", # tf_efficientnet_b2_ns, vit_base_patch16_384, vit_small_patch16_224 "vit_small_patch16_224"
     "optimizer":"AdamW",
     "scheduler":"warmup",
     "lr":0.00025,   # 0.00025

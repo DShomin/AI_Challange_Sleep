@@ -76,7 +76,7 @@ model.load_state_dict(torch.load(os.path.join(model_path, folder, file_name)))
 model.eval()
 
 test_preds = inference(model, test_loader, device)
-np.save(os.path.join(model_path, folder, 'test_preds.npy'), test_preds)
+np.save(os.path.join(model_path, f'test_preds{args.infer_prefix}.npy'), test_preds)
 
 test_preds = np.argmax(test_preds, 1)
 
@@ -89,3 +89,4 @@ result_df[0] = result_df[0].map(label_dict)
 test_pred_path = "/USER/INFERENCE"
 result_df.to_csv(os.path.join(test_pred_path, f'final_result{args.infer_prefix}.csv'), header=None, index=False)
 # files.csv
+

@@ -256,4 +256,4 @@ class Lookahead(Optimizer):
                     elif self.pullback_momentum == "reset":
                         self.optimizer.state[p]["momentum_buffer"] = torch.zeros_like(p.data)
 
-        return loss(base) 
+        return loss

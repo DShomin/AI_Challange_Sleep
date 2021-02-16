@@ -187,3 +187,4 @@ def validation(args, trn_cfg, model, criterion, valid_loader, device):
     metrics = f1_score(total_labels, total_outputs, average='macro')
 
     return epoch_val_loss, acc, metrics
+

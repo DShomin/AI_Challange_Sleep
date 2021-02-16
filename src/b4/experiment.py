@@ -11,11 +11,10 @@ args = {
     "input_size":512,
     "batch_size":32,
     "infer_batch_size":64,
-    "infer_model_path":'b2',
-    "infer_best_model_name":'best_score_fold0_010.pth',
-    "infer_prefix":4, 
+    "infer_model_path":'2021-02-07_01:26:48_resnext50_32x4d',
+    "infer_best_model_name":'best_score_fold0_013.pth',
     "num_workers":1,
-    "model":"tf_efficientnet_b2_ns", # resnext50_32x4d,tf_efficientnet_b2_ns, vit_base_patch16_384, vit_small_patch16_224 "vit_small_patch16_224"
+    "model":"tf_efficientnet_b4_ns", # resnext50_32x4d,tf_efficientnet_b2_ns, vit_base_patch16_384, vit_small_patch16_224 "vit_small_patch16_224"
     "optimizer":"AdamW",
     "scheduler":"warmup",
     "lr":0.00025,   # 0.00025
