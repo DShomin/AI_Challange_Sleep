@@ -84,4 +84,5 @@ label_dict = {0:'Wake', 1:'N1', 2:'N2', 3:'N3', 4:'REM'}
 result_df[0] = result_df[0].map(label_dict)
 
 test_pred_path = "/USER/INFERENCE"
+
 result_df.to_csv(os.path.join(test_pred_path, f'inference_result1.csv'), header=None, index=False)

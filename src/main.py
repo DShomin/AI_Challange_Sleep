@@ -20,7 +20,7 @@ from models import *
 from trainer import *
 from transforms import *
 from optimizer import *
-from utils import seed_everything, find_th, LabelSmoothingLoss
+from utils import seed_everything, find_th, LabelSmoothingLoss, GradualWarmupSchedulerV2
 
 import warnings
 from warmup_scheduler import GradualWarmupScheduler
@@ -151,7 +151,7 @@ def main():
     optimizer = build_optimizer(args, model)
     #scheduler = build_scheduler(args, optimizer, len(train_loader))
     scheduler_cosine = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, 9)
-    scheduler = GradualWarmupScheduler(optimizer, multiplier=1, total_epoch=1, after_scheduler=scheduler_cosine)
+    scheduler = GradualWarmupSchedulerV2(optimizer, multiplier=1, total_epoch=1, after_scheduler=scheduler_cosine)
 
     if args.label_smoothing:
         criterion = LabelSmoothingLoss(classes=args.num_classes, smoothing=args.label_smoothing_ratio)

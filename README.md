@@ -32,26 +32,37 @@ python inference-train.py
 
 <hr>
 # 2. Running inference code
+```
+ - inference-train.py 코드 작성
+
+ python inference-train.py
+```
+```
+ - inference-test1.py 코드 작성
+
+ python inference-test1.py
+
+ output : 최고점을 받은 모델과 비슷한 성능을 보이는 모델 (inferece_result1.csv)
+
+```
+ ```
+ - inference-test2.py 코드 작성
+
+ output : 최고점을 받은 모델 (inferece_result2.csv)
+```
+
 
  - inference-train.py 코드 작성
 ```
- python inference-train.py
+
+python inference-test.py
 ```
-
-
- - inference-test1.py 코드 작성
-```
- python inference-test1.py
-```
- output : 최고점을 받은 모델과 비슷한 성능을 보이는 모델 (inference_result1.csv)
-
-
-
-
- - inference-test2.py 코드 작성
-```
- python inference-test2.py
-```
- output : 최고점을 받은 모델 (inference_result2.csv)
-
-
+위 명령어 실행 시 아래와 같은 파일이 생성
+- output file
+    - final_result1.csv
+    - final_result2.csv
+    - final_result3.csv
+    - final_result4.csv
+    - final_result5.csv
+    - final_result6.csv
+    - final_result_ensemble.csv (최종)
