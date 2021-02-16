@@ -52,7 +52,9 @@ python inference-train.py
 ```
 
 
+ - inference-train.py 코드 작성
 ```
+
 python inference-test.py
 ```
 위 명령어 실행 시 아래와 같은 파일이 생성

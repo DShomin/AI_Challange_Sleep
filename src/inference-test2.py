@@ -12,12 +12,12 @@ os.system("python inference.py -C config_b3")
 os.system("python inference.py -C config_b4")
 
 
-b00 = np.load('tf_efficientnet_b0_ns_0.8/test_preds.npy') 
-b01 = np.load('tf_efficientnet_b0_ns_0.7/test_preds.npy') 
-b1 = np.load('tf_efficientnet_b1_ns_0.8/test_preds.npy')    
-b2 = np.load('tf_efficientnet_b2_ns_0.8/test_preds.npy')   
-b3 = np.load('tf_efficientnet_b3_ns_0.8/test_preds.npy')   
-b4 = np.load('tf_efficientnet_b4_ns_0.8/test_preds.npy')  
+b00 = np.load('test_preds1.npy') 
+b01 = np.load('test_preds2.npy') 
+b1 = np.load('test_preds3.npy')    
+b2 = np.load('test_preds4.npy')   
+b3 = np.load('test_preds5.npy')   
+b4 = np.load('test_preds6.npy')  
 
 
 
@@ -28,4 +28,4 @@ label_dict = {0:'Wake', 1:'N1', 2:'N2', 3:'N3', 4:'REM'}
 result_df[0] = result_df[0].map(label_dict)
 print(result_df.loc[:10], result_df.shape)
 test_pred_path = "/USER/INFERENCE"
-result_df.to_csv(os.path.join(test_pred_path, 'final_result_ensemble.csv'), header=None, index=False)
+result_df.to_csv(os.path.join(test_pred_path, 'inference_result2.csv'), header=None, index=False)
